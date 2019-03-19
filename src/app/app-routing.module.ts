@@ -9,7 +9,17 @@ const routes: Routes = [
   },
   {
     path: 'recipes',
-    loadChildren: './features/recipes/recipes.module#RecipesPageModule'
+    children: [
+      {
+        path: '',
+        loadChildren: './features/recipes/recipes.module#RecipesPageModule'
+      },
+      {
+        path: ':recipeId',
+        loadChildren:
+          './features/recipes/recipe-detail/recipe-detail.module#RecipeDetailPageModule'
+      }
+    ]
   }
 ];
 

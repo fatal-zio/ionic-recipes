@@ -7,14 +7,14 @@ import { Recipe } from '../../shared/models/recipe.model';
 export class RecipeService {
   private recipes: Recipe[] = [
     {
-      id: 'lknvgl',
+      id: 'id1',
       title: 'Schnitzel',
       imageUrl:
         'https://activerain-store.s3.amazonaws.com/blog_entries/210/5026210/original/Wiener_Schnitzel.jpg',
       ingredients: ['French Fries', 'Pork', 'Salad']
     },
     {
-      id: 'adsflknjla',
+      id: 'id2',
       title: 'Spaghetti',
       imageUrl:
         'https://media.istockphoto.com/photos/spaghetti-bolognese-on-a-white-plate-picture-id652225084',

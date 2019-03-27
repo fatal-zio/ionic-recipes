@@ -1,5 +1,7 @@
 {
-  "name": "ionic-angular",
-  "integrations": {},
+  "name": "fatal-recipes",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

@@ -1,0 +1,6 @@
+{
+  "appId": "fatal.zio.recipes",
+  "appName": "fatal-recipes",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

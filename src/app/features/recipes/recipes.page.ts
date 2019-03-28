@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Recipe } from '../../shared/models/recipe.model';
 import { RecipeService } from '../../core/services/recipe.service';
 
@@ -12,7 +12,9 @@ export class RecipesPage implements OnInit {
 
   constructor(private recipeService: RecipeService) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  ionViewWillEnter() {
     this.recipes = this.recipeService.getRecipes();
   }
 }
